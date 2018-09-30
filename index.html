@@ -14,8 +14,40 @@
 				<canvas id="Dice" data-processing-sources="Dice.pde">
 				</canvas>
 		    </section>
-	    <footer>
-		      <a href="https://ocw.mit.edu/courses/mechanical-engineering/2-017j-design-of-electromechanical-robotic-systems-fall-2009/assignments/MIT2_017JF09_p08.pdf">Will you roll the dice on this link?</a>
+<!-- <script src="jquery-3.3.1.min.js">
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+function changeLink(){
+	var address = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
+if (getRandomInt(10)) {
+  address = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
+}
+else(){
+	address = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
+}
+// var yourElement = document.getElementById('rickRolled?');
+//  yourElement.setAttribute('href', 'address');
+ document.getElementById("rickRolled?").href = "address";
+} -->
+
+			<footer>
+		      <a id = "rickRolled?"  a target="_blank" href="https://ocw.mit.edu/courses/mechanical-engineering/2-017j-design-of-electromechanical-robotic-systems-fall-2009/assignments/MIT2_017JF09_p08.pdf">Will you roll the dice on this link?</a>
 	    </footer>
+			<script>
+			var address;
+			function getRandomInt(max) {
+			  return Math.floor(Math.random() * Math.floor(max));
+			}
+
+			 if (getRandomInt(10)<7) {
+			  address = "https://ocw.mit.edu/courses/mechanical-engineering/2-017j-design-of-electromechanical-robotic-systems-fall-2009/assignments/MIT2_017JF09_p08.pdf";
+			}
+			else {
+				address = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
+			}
+
+			document.getElementById("rickRolled?").href = address;
+			</script>
 	</body>
 </html>
