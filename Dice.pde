@@ -102,6 +102,5 @@ class Die //models one single dice cube
       ellipse(myX+diceL*.25, myY+diceL*.82, 4.5, 4.5);
     }
     fill(0);
-    print(numDice + " ");
   }
 }
